@@ -1,0 +1,8 @@
+{
+  "locales": [ "zh-cn", "de-de" ],
+  "files": [
+	"virtualization/**/*.md"
+  ],
+  "includeDependencies": true,
+  "autoPush": true
+}
