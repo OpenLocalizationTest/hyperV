@@ -1,0 +1,16 @@
+{
+	"docset_files": [
+		"virtualization/community/Docset.json",
+		"virtualization/hyperv_on_windows/Docset.json",
+		"virtualization/windowscontainers/Docset.json"
+	],
+	"build_config": {
+		"incremental": "true",
+		"force_build": "true",
+		"notification_subscribers":
+		[
+			"zhenjiao@microsoft.com",
+			"fenxu@microsoft.com"
+		]
+	}
+}

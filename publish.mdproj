@@ -1,22 +1,17 @@
-<Project 
-    DefaultTargets="Publish"
+<Project
+    DefaultTargets="Build"
     ToolsVersion="4.0"
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
-    <BuildTaskPackage>OpenAuthoringPublishingBuild</BuildTaskPackage>
-    <ToolsFolder>$(MSBuildThisFileDirectory)Tools\</ToolsFolder>    
+    <BuildTaskPackage>OpenPublishingBuild</BuildTaskPackage>
+    <ToolsFolder>$(MSBuildThisFileDirectory)Tools\</ToolsFolder>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageInstalled>True</PackageInstalled>
-    <PackageInstalled Condition="EXISTS('$(PackageRootFolder)build\net451\OpenAuthoringPublishing.props') != 'True'">False</PackageInstalled>
-    <PackageInstalled Condition="EXISTS('$(PackageRootFolder)build\net451\OpenAuthoringPublishing.mdproj') != 'True'">False</PackageInstalled>
-  </PropertyGroup>
-  
-  <PropertyGroup>
-    <NuGetSourceArgument Condition="$(NuGetPackageDirectory) == ''"></NuGetSourceArgument>
-    <NuGetSourceArgument Condition="$(NuGetPackageDirectory) != ''">-Source &quot;https://www.nuget.org/api/v2/&quot; -Source &quot;$(NuGetPackageDirectory)&quot;</NuGetSourceArgument>
+    <PackageInstalled Condition="EXISTS('$(PackageRootFolder)build\Net451\OpenPublishingBuild.props') != 'True'">False</PackageInstalled>
+    <PackageInstalled Condition="EXISTS('$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj') != 'True'">False</PackageInstalled>
   </PropertyGroup>
 
   <!-- nuget Restore Target-->
@@ -26,12 +21,15 @@
     <!-- file, packages.config, and nuget.exe. The rest can be boot strapped by the build process. -->
     <Error Condition="EXISTS('$(MSBuildThisFileDirectory)packages.config') != 'True'" Text="packages.config was not found at the expected location: $(MSBuildThisFileDirectory)." />
     <Error Condition="EXISTS('$(ToolsFolder)NuGet\NuGet.exe') != 'True'" Text="Nuget.exe was not found at the expected location: $(ToolsFolder)NuGet." />
-    
+
     <!-- Use NuGet to pull down any packages -->
-    <Exec Command="&quot;$(ToolsFolder)NuGet\NuGet.exe&quot; restore &quot;$(MSBuildThisFileDirectory)\packages.config&quot; -PackagesDirectory &quot;$(MSBuildThisFileDirectory)\packages&quot; $(NuGetSourceArgument)"
+    <PropertyGroup>
+      <NuGetConfigFileArgument Condition="EXISTS('$(ToolsFolder)NuGet\NuGet.config') == 'True'">-ConfigFile &quot;$(ToolsFolder)NuGet\NuGet.config&quot;</NuGetConfigFileArgument>
+    </PropertyGroup>
+    <Exec Command="&quot;$(ToolsFolder)NuGet\NuGet.exe&quot; restore &quot;.\packages.config&quot; -PackagesDirectory &quot;.\packages&quot; $(NuGetConfigFileArgument)"
           Condition="$(PackageInstalled) != 'True'"/>
 
-    <!-- Get installed packgage version -->
+    <!-- Get installed package version -->
     <XmlPeek
         XmlInputPath=".\packages.config"
         Query="//package[@id='$(BuildTaskPackage)']/@version">
@@ -59,33 +57,43 @@
   </Target>
 
   <!-- Build Target -->
-  <Target 
+  <Target
       Name="Build"
       DependsOnTargets="RestorePackages">
 
-    <MSBuild 
-        Targets="Build" 
-        Projects="$(PackageRootFolder)build\net451\OpenAuthoringPublishing.mdproj" />
+    <MSBuild
+        Targets="Build"
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
 
   </Target>
 
-  <Target 
+  <Target
+      Name="Serve"
+      DependsOnTargets="RestorePackages">
+
+    <MSBuild
+        Targets="Serve"
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
+
+  </Target>
+
+  <Target
       Name="Clean"
       DependsOnTargets="RestorePackages">
 
-    <MSBuild 
-        Targets="Clean" 
-        Projects="$(PackageRootFolder)build\net451\OpenAuthoringPublishing.mdproj" />
+    <MSBuild
+        Targets="Clean"
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
 
   </Target>
 
-  <Target 
+  <Target
       Name="Rebuild"
       DependsOnTargets="RestorePackages">
 
-    <MSBuild 
-        Targets="Rebuild" 
-        Projects="$(PackageRootFolder)build\net451\OpenAuthoringPublishing.mdproj" />
+    <MSBuild
+        Targets="Rebuild"
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
   </Target>
 
 </Project>
