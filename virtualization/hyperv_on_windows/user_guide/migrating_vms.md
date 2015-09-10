@@ -1,6 +1,3 @@
-ms.ContentId: 34D5925A-D724-4552-9403-C2703A973234 
-title: Migrating and upgrading virtual machines
-
 # Migrate and upgrade virtual machines 
 
 

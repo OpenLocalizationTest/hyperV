@@ -1,6 +1,3 @@
-ms.ContentId: B971C429-CEF0-4DAB-8456-3B08AEC0C233
-title: Step 7: Export and import a virtual machine
-
 # Step 7: Export and import a virtual machine 
 
 You can quickly copy a virtual machine or move a virtual machine by using the export and import functionality.

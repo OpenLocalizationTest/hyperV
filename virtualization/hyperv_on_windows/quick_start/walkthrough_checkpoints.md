@@ -1,6 +1,3 @@
-ms.ContentId: FBBAADE6-F1A1-4B5C-8FD2-BDCA3FCF81CA
-title: Step 6: Experiment with checkpoints
-
 # Step 6: Experiment with checkpoints 
 
 Checkpoints are a helpful tool when you want to save the present state of a virtual machine before making a change such as applying an update, installing software, or changing a setting.  If the change causes issues, you can restore the checkpoint and go back.  

@@ -1,6 +1,3 @@
-ms.ContentId: 178899C9-8EA6-4D82-A0B0-8BE4DDD78DAE
-title: Step 5: Connect to the virtual machine and finish the installation
-
 # Step 5: Connect to the virtual machine and finish the installation 
 
 In order to finish building your virtual machine, you need to start the VM and walk through the operating system installation.

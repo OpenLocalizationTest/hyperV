@@ -1,7 +1,3 @@
-ms.ContentId: 7561B149-A147-4F71-9840-6AE149B9DED5
-title: Supported Windows Guest Operating Systems
-
-
 # Supported Windows guests 
 This article lists the Windows operating systems supported as guests in Hyper-V on Windows, as well provides information about integration services. 
 

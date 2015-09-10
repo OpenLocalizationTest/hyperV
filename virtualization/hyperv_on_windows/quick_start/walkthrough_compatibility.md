@@ -1,6 +1,3 @@
-ms.ContentId: C2593EA1-B182-4C71-8504-49691F619158
-title: Step 1: Make sure your machine is compatible
-
 # Step 1: Make sure your machine can run Hyper-V
 
 Only Windows 10 Pro and Windows 10 Enterprise support Hyper-V.
