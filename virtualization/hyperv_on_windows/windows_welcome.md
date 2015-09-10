@@ -10,10 +10,10 @@ Hyper-V in Windows is sometimes referred to as Client Hyper-V.
 		<td><center>![](./media/whats_new.png)</center></td>
 		<td valign="top">
 		<p><strong>What's new in Hyper-V?</strong></p>
-		<p>Read [What's New](./about/whats_new.md) to learn about new and changed features for Hyper-V in Windows 10.</p></td>
+		<p>Read What_new to learn about new and changed features for Hyper-V in Windows 10.</p></td>
 	</tr>
 	<tr valign="top">
-		<td><center>![](./media/MeetsRequirements_65.png)</center></td>
+		<td><center>meets.png</center></td>
 		<td valign="top">
 			<p><strong>About Hyper-V on Windows</strong></p>
 			<p>The following articles provide an introduction to and information about Hyper-V on Windows.</p>
