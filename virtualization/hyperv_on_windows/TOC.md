@@ -1,6 +1,6 @@
 # HyperV
 ## About
-### [Hyperv on Windows](about/hyperv_on_windows.md)
+### [Hyper-v on Windows](about/hyperv_on_windows.md)
 ### [Supported Guest OS](about/supported_guest_os.md)
 ### [Whats New](about/whats_new.md)
 ## [Build](about/build.md)
