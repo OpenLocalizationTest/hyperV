@@ -4,7 +4,7 @@ Whether you are a software developer, an ITPro, or a tech enthusiast, many of yo
 
 Here is a diagram:
 
-![image](media/ProductionCheckpoints.jpg)
+![image](media/ProductionCheckpoints.png)
 
 ## Uses for virtualization
 Virtualization enables anyone to easily maintain multiple test environments consisting of many operating systems, software configurations, and hardware configurations.  Hyper-V provides virtualization on Windows as well as a simple mechanism to quickly switch between these environments without incurring additional hardware costs.    
