@@ -12,8 +12,8 @@ If you're managing older virtual machines, use Virtual Machine Connection (VMCon
 
 3. Run the one of the following commands to create a session by using the virtual machine name or GUID:  
 ``` PowerShell
-Enter-PSSession -VMName <VMName>
-Enter-PSSession -VMGUID <VMGUID>
+Enter-PSSession -VMName &lt;VMName&gt;
+Enter-PSSession -VMGUID &lt;VMGUID&gt;
 ```
 
 4. Run whatever commands you need to. These commands run on the virtual machine that you created the session with.

@@ -53,7 +53,7 @@ get-vm
 1. To start a particular virtual machine, run the following command with name of the virtual machine:
 
  ```powershell
- Start-vm –Name <virtual machine name>
+ Start-vm –Name &lt;virtual machine name&gt;
  ```
 
 2. To start all currently powered off virtual machines, get a list of those machines and pipe the list to the 'start-vm' command:
@@ -72,7 +72,7 @@ get-vm
 To create a checkpoint using PowerShell, select the virtual machine using the `get-vm` command and pipe this to the `checkpoint-vm` command. Finally give the checkpoint a name using `-snapshotname`. The complete command will look like the following:
 
  ```powershell
- get-vm -Name <VM Name> | checkpoint-vm -snapshotname <name for snapshot>
+ get-vm -Name &lt;VM Name&gt; | checkpoint-vm -snapshotname &lt;name for snapshot&gt;
  ```
 For example, here is a checkpoint with the name DEMOCP:
  
