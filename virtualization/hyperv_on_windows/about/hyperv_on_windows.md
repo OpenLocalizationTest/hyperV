@@ -1,4 +1,4 @@
-# Introduction to Hyper-V on Windows 10 (Beta)
+# Introduction to Hyper-V on Windows 10 (Beta2)
 
 Whether you are a software developer, an ITPro, or a tech enthusiast, many of you need to run multiple operating systems, occasionally on many different machines. Not all of us have access to a full suite of labs to house all these machines, and so virtualization can be a space and time saver.
 
