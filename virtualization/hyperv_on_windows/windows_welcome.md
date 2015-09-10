@@ -2,7 +2,7 @@
 
 Hyper-V lets you run more than one 32-bit or 64-bit x86 operating system at the same time on the same computer. Instead of running directly on the computer’s hardware, the operating systems run inside of a virtual machine (VM).
 
-
+hello
 Hyper-V in Windows is sometimes referred to as Client Hyper-V.
 
 <table border="1" style="background-color:FFFFCC;border-collapse:collapse;border:1px solid FFCC00;color:000000;width:100%" cellpadding="15" cellspacing="3">
