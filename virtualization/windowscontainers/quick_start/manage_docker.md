@@ -139,8 +139,6 @@ docker run –it --name newcontainer newcontainerimage cmd
 
 Take a look at the c:\ drive of this new container and notice that the ipconfig.txt file is present.
 
-![](media/docker3.png)
-
 Exit the newly created container to return to the container hosts console session.
 
 ``` PowerShell
