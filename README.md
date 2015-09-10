@@ -1,5 +1,5 @@
 Welcome to Hyper-V Documentation
-==================================
+================================
 
 This is the repository of Hyper-V documentation powered by MSDN Open Publishing.
 
