@@ -4,6 +4,7 @@ Whether you are a software developer, an ITPro, or a tech enthusiast, many of yo
 
 Here is a diagram:
 
+
 ![image](media/ProductionCheckpoints.png)
 
 ## Uses for virtualization
