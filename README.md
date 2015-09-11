@@ -22,7 +22,7 @@ Start contributing to .NET Core documentation using the following steps:
    ```
 
 4. Wait for a moment and your changes will be automatically published to:
-https://int.msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/about/hyperv_on_windows
+https://int.msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/about/hyperv_on_windows_new
 
 > If you don't have the permission to push to this repo, fork it to your own account and use pull request to submit your changes back.
 
