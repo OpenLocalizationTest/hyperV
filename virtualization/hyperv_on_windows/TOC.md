@@ -5,8 +5,8 @@
 ### [Whats New](about/whats_new.md)
 ## [Build](about/build.md)
 ## Develop
-### [Make Mgmt Service](develop/make_mgmt_service_new.md)
-### [Powershell Snippets](powershell_snippets.md)
+### [Make Mgmt Service](develop/make_mgmt_service.md)
+### [Powershell Snippets](develop/powershell_snippets.md)
 ## Quick Start
 ### [Walkthrough](quick_start/walkthrough.md)
 ### [walkthrough checkpoints](quick_start/walkthrough_checkpoints.md)
