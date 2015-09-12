@@ -1,7 +1,7 @@
 # Make a new management service #
 This document introduces VM Services built on Hyper-V sockets and how to get started using them.
 
-![](../media/2.png)
+![](../media/1.png)
 
 ## What is a VM Service?
 VM Services are services that span the Hyper-V host and virtual machines running on the host.
