@@ -1,6 +1,6 @@
 # What's New for Hyper-V on Windows 10
 
-This topic explains the new and changed functionality in Hyper-V on Windows 10®. this is for testing.
+This topic explains the new and changed functionality in Hyper-V on Windows 10®.
 
 ## Windows PowerShell Direct
 
