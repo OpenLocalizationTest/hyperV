@@ -1,4 +1,4 @@
-# Hyper-V on Windows 10 test
+# Hyper-V on Windows 10
 
 ![image7](media/7.png)
 
