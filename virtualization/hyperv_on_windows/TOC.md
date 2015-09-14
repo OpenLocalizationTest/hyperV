@@ -1,4 +1,5 @@
 # HyperV
+## [Welcome to Hyper-V on Windows 10](windows_welcome7.md)
 ## About
 ### [Hyper-v on Windows](about/hyperv_on_windows_new.md)
 ### [Supported Guest OS](about/supported_guest_os.md)
@@ -11,8 +12,8 @@
 ### [Walkthrough](quick_start/walkthrough.md)
 ### [walkthrough checkpoints](quick_start/walkthrough_checkpoints.md)
 ### [walkthrough compatibility](quick_start/walkthrough_compatibility.md)
-### [walkthrough create_vm](quick_start/walkthrough_create_vm.md)
-### [walkthrough export_import](quick_start/walkthrough_export_import.md)
+### [walkthrough create VM](quick_start/walkthrough_create_vm.md)
+### [walkthrough export import](quick_start/walkthrough_export_import.md)
 ### [walkthrough install](quick_start/walkthrough_install.md)
 ### [walkthrough powershell](quick_start/walkthrough_powershell.md)
 ### [walkthrough virtual switch](quick_start/walkthrough_virtual_switch.md)
